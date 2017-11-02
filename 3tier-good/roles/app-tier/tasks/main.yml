@@ -10,15 +10,15 @@
     name: "{{ payload }}"
     enabled: yes
 
-- name: create ansible tomcat directory
+- name: create tomcat default web directory
   file:
-   path: /usr/share/tomcat/webapps/ROOT
-   state: directory
+    path: "{{ tomcat_web_root }}"
+    state: directory
 
-- name: copy static index.html to tomcat webapps/ansible/index.html
+- name: copy static index.html to tomcat webroot
   template:
     src: index.html.j2
-    dest: /usr/share/tomcat/webapps/ROOT/index.html
+    dest: "{{ tomcat_web_root }}"/index.html
     mode: 0644
 
 - name: restart tomcat
