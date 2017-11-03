@@ -1,6 +1,6 @@
 ---
 - name: Ensure PostgreSQL packages are installed.
-  yum:
+  package:
     name: "{{ item }}"
     state: installed
     enablerepo: "{{ postgresql_enablerepo }}"
