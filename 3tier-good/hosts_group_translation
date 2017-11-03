@@ -1,0 +1,11 @@
+[tag_AnsibleGroup_frontends]
+[tag_AnsibleGroup_appdbs]
+[tag_AnsibleGroup_apps]
+
+
+[appdbs:children]
+tag_AnsibleGroup_appdbs
+[apps:children]
+tag_AnsibleGroup_apps
+[frontends:children]
+tag_AnsibleGroup_frontends
