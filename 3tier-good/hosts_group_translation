@@ -1,3 +1,20 @@
+[all:vars]
+
+[internal:vars]
+
+###########################################################################
+### Ansible Vars
+###########################################################################
+timeout=60
+ansible_become=yes
+ansible_ssh_user=ec2-user
+
+[internal:children]
+frontends
+apps
+appdbs
+
+
 [tag_AnsibleGroup_frontends]
 [tag_AnsibleGroup_appdbs]
 [tag_AnsibleGroup_apps]
