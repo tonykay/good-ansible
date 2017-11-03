@@ -30,3 +30,17 @@ appdb1 ansible_host=appdb1."{{ GUID }}".internal
 
 [external]
 #web ansible_host=frontend."{{ GUID }}".example.opentlc.com
+
+
+
+[tag_AnsibleGroup_frontends]
+[tag_AnsibleGroup_appdbs]
+[tag_AnsibleGroup_apps]
+
+
+[appdbs:children]
+tag_AnsibleGroup_appdbs
+[apps:children]
+tag_AnsibleGroup_apps
+[frontends:children]
+tag_AnsibleGroup_frontends
