@@ -2,4 +2,4 @@
 
 - name: check tomcat serving via haproxy
   uri:
-    url: http://frontend1.1901.example.opentlc.com/ansible
+    url: http://frontend1.{{ GUID }}.example.opentlc.com/ansible
