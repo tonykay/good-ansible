@@ -1,14 +1,21 @@
-== good-ansible
+:toc: macro
 
-Good Ansible is a "better" version of Bad Ansible for training purposes. In time
- perhaps it will become good - for now think "better" Ansible
+= good-ansible
+
+toc::[]
+
+== Overview
+
+
+Good Ansible is a "better" version of the repo `bad-ansible` for training
+ purposes. In time, perhaps, it will become good - for now think "better" Ansible
 
 . Env Files and Settings
 
 Inventory file hosts, ssh.cfg reflect a particular lab environment and will need
- modified to be used elsewhere
+ modified to be used elsewhere.
 
- === ssh.cfg
+=== ssh.cfg
 
 This, optional, configuration file assumes the use of a `bastion` or `jumpbox`
 and in some environments will be unnecessary or alternatively the `~/.ssh/config`
