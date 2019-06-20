@@ -1,18 +1,17 @@
-[all:vars]
-#GUID=b9f3
+[frontends]
+## These are the frontends
+frontend1.df0b.internal ansible_ssh_host=frontend1.df0b.example.opentlc.com
 
-[internal:vars]
+[apps]
+## These are the apps
+app1.df0b.internal ansible_ssh_host=app1.df0b.example.opentlc.com
+app2.df0b.internal ansible_ssh_host=app2.df0b.example.opentlc.com
 
-###########################################################################
-### Ansible Vars
-###########################################################################
-timeout=60
-ansible_become=yes
-ansible_ssh_user=ec2-user
+[appdbs]
+## These are the appdbs
+appdb1.df0b.internal ansible_ssh_host=appdb1.df0b.example.opentlc.com
 
-[appdbs:children]
-tag_AnsibleGroup_appdbs
-[apps:children]
-tag_AnsibleGroup_apps
-[frontends:children]
-tag_AnsibleGroup_frontends
+## These are the support
+[support]
+support1.df0b.internal ansible_ssh_host=support1.df0b.example.opentlc.com
+
