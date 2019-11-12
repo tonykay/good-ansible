@@ -1,14 +1,14 @@
 [frontends]
-frontend1.df0b.internal ansible_ssh_host=frontend1.df0b.example.opentlc.com
+frontend1.3f68.internal ansible_ssh_host=frontend1.3f68.example.opentlc.com
 
 [apps]
-app1.df0b.internal ansible_ssh_host=app1.df0b.example.opentlc.com
-app2.df0b.internal ansible_ssh_host=app2.df0b.example.opentlc.com
+app1.3f68.internal ansible_ssh_host=app1.3f68.example.opentlc.com
+app2.3f68.internal ansible_ssh_host=app2.3f68.example.opentlc.com
 
 [appdbs]
-appdb1.df0b.internal ansible_ssh_host=appdb1.df0b.example.opentlc.com
+appdb1.3f68.internal ansible_ssh_host=appdb1.3f68.example.opentlc.com
 
 ## These are the support
 [support]
-support1.df0b.internal ansible_ssh_host=support1.df0b.example.opentlc.com
+support1.3f68.internal ansible_ssh_host=support1.3f68.example.opentlc.com
 
