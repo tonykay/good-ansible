@@ -1,9 +1,9 @@
 ---
 
 - hosts: jumpbox
-  gather_facts: false
+  gather_facts: true
   roles:
-    - {name: osp-facts, when: ansible_product_name ==  'OpenStack Compute'}
+  - name: osp-facts
 # Setup front-end load balancer tier
 
 
